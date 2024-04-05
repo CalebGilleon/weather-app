@@ -8,7 +8,7 @@ import AboutView from "./components/AboutView";
 
 //install react-router-dom
 function App() {
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState("");
 
   return (
     <div>

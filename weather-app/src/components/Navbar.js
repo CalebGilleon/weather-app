@@ -6,7 +6,6 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
 
     const [text, setText] = useState("");
 
-
     const updateText = (e) => {
         navigate('/search')
         setText(e.target.value)
@@ -16,7 +15,6 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
       e.preventDefault();
       navigate('/search');
       setSearchResults(text);
-      console.log("It's working")
   };
 
   return (
