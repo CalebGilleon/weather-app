@@ -5,7 +5,7 @@ const AboutView = () => {
         <>
             <Hero text="About us"/>
             <div className="container">
-                some stuff in here
+                <h1>about us stuff</h1>
             </div>
         </>
     )

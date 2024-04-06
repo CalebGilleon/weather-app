@@ -72,6 +72,13 @@ const SearchView = ({ searchResults }) => {
         </div>
       </>
     );
+  } else {
+    return (
+      <>
+      <Hero text="Search for any city..."/>
+      <div className="data-container"></div>
+      </>
+    )
   }
 };
 

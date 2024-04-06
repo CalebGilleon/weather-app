@@ -1,0 +1,21 @@
+.home-container {
+    background-image: url(../../public/sun.webp);
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.home-message {
+    border-radius: 25px;
+    border: 5px solid white;
+    background-color: lightgray;
+    padding: 25px;
+}
+.search-pic {
+    display: inline-block;
+    height: 75px;
+}
+.home-text {
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 25px;
+}
