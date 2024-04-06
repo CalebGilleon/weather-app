@@ -66,7 +66,7 @@ const SearchView = ({ searchResults }) => {
           <h4>Humidity: {humidity}%</h4>
           <h4>Wind: {windSpeed} mph</h4>
           <div className="space"></div>
-          <h2>{cityName}, {cityState}</h2>
+          <h1>{cityName}, {cityState}</h1>
           <h4>Latitude: {cityLat}</h4>
           <h4>Longitude: {cityLon}</h4>
         </div>

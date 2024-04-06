@@ -5,6 +5,7 @@ import HomeView from "./components/HomeView";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchView from "./components/SearchView";
 import AboutView from "./components/AboutView";
+import NotFound from "./components/NotFound";
 
 //install react-router-dom
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <SearchView searchResults={searchResults} />
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
