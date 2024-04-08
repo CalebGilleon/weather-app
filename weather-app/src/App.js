@@ -7,7 +7,6 @@ import SearchView from "./components/SearchView";
 import AboutView from "./components/AboutView";
 import NotFound from "./components/NotFound";
 
-//install react-router-dom
 function App() {
   const [searchResults, setSearchResults] = useState("");
 
@@ -20,9 +19,7 @@ function App() {
           <Route path="/about" element={<AboutView />} />
           <Route
             path="/search"
-            element={
-              <SearchView searchResults={searchResults} />
-            }
+            element={<SearchView searchResults={searchResults} />}
           />
           <Route path="*" element={<NotFound />} />
         </Routes>

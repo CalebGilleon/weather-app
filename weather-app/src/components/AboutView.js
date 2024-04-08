@@ -29,7 +29,10 @@ const AboutView = () => {
               </p>
             </li>
             <li>
-              <p className="list-points">Client-side routing used to navigate between home, about, and search pages</p>
+              <p className="list-points">
+                Client-side routing used to navigate between home, about, and
+                search pages
+              </p>
             </li>
             <li>
               <p className="list-points">

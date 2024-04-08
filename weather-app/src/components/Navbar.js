@@ -2,18 +2,18 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
-    const [text, setText] = useState("");
+  const [text, setText] = useState("");
 
-    const updateText = (e) => {
-        setText(e.target.value)
-    }
+  const updateText = (e) => {
+    setText(e.target.value);
+  };
 
-    const handleSearchSubmit = (e) => {
-      e.preventDefault();
-      navigate('/search');
-      setSearchResults(text);
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    navigate("/search");
+    setSearchResults(text);
   };
 
   return (

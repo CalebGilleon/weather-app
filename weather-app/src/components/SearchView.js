@@ -14,7 +14,7 @@ const SearchView = ({ searchResults }) => {
   const [windSpeed, setWindSpeed] = useState(null);
 
   useEffect(() => {
-    // Fetch cityLat and cityLon based on searchResults
+    //fetches cityLat and cityLon based on searchResults
     if (searchResults) {
       fetch(
         `https://api.openweathermap.org/geo/1.0/direct?q=${searchResults}&appid=3e53e4bc8b9215314789abc753636bf5`
@@ -33,7 +33,7 @@ const SearchView = ({ searchResults }) => {
         });
     }
 
-    //use lat and lon to make second call to retrieve weather info
+    //uses lat and lon to make second call to retrieve weather info
     if (cityLat && cityLon) {
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${cityLat}&lon=${cityLon}&appid=3e53e4bc8b9215314789abc753636bf5`
@@ -66,7 +66,9 @@ const SearchView = ({ searchResults }) => {
           <h4>Humidity: {humidity}%</h4>
           <h4>Wind: {windSpeed} mph</h4>
           <div className="space"></div>
-          <h1>{cityName}, {cityState}</h1>
+          <h1>
+            {cityName}, {cityState}
+          </h1>
           <h4>Latitude: {cityLat}</h4>
           <h4>Longitude: {cityLon}</h4>
         </div>
@@ -75,10 +77,10 @@ const SearchView = ({ searchResults }) => {
   } else {
     return (
       <>
-      <Hero text="Search for any city..."/>
-      <div className="data-container"></div>
+        <Hero text="Search for any city..." />
+        <div className="data-container"></div>
       </>
-    )
+    );
   }
 };
 
