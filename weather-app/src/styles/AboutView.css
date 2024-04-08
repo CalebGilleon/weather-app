@@ -1,0 +1,16 @@
+.about-body {
+    background: rgb(250,250,247);
+    background: linear-gradient(43deg, rgba(250,250,247,1) 0%, rgba(82,92,167,1) 100%);
+    padding-top: 100px;
+    height: 800px;
+}
+.about-container {
+    border: 5px solid white;
+    background-color: lightgray;
+    margin: 0px 300px 0px 300px;
+    padding: 25px;
+    border-radius: 25px;
+}
+.list-points {
+    font-size: 25px;
+}

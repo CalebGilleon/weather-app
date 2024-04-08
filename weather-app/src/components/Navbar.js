@@ -7,7 +7,6 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
     const [text, setText] = useState("");
 
     const updateText = (e) => {
-        // navigate('/search')
         setText(e.target.value)
     }
 
@@ -44,42 +43,6 @@ const Navbar = ({ searchText, setSearchText, setSearchResults }) => {
             <li className="nav-item">
               <Link className="nav-link" to="/about">
                 About
-              </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">
-                Coming Soon
               </Link>
             </li>
           </ul>
