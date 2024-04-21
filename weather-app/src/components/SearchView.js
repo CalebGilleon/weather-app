@@ -12,6 +12,8 @@ const SearchView = ({ searchResults }) => {
   const [feelsLike, setFeelsLike] = useState(null);
   const [humidity, setHumidity] = useState(null);
   const [windSpeed, setWindSpeed] = useState(null);
+  const [isNight, setIsNight] = useState(false);
+
 
   useEffect(() => {
     //fetches cityLat and cityLon based on searchResults
@@ -51,6 +53,11 @@ const SearchView = ({ searchResults }) => {
           setFeelsLike(feels.toFixed(1));
           setHumidity(humid);
           setWindSpeed(wind.toFixed(1));
+
+          //checks if it's night time (after 8 pm)
+          const date = new Date();
+          const hours = date.getHours();
+          setIsNight(hours >= 20 || hours < 6);
         });
     }
   }, [searchResults, cityLat, cityLon]);
@@ -59,7 +66,7 @@ const SearchView = ({ searchResults }) => {
     return (
       <>
         <Hero text={cityName} />
-        <div className="data-container">
+        <div className={`data-container ${isNight ? 'night' : 'day'}`}>          
           <h1 className="temp">{currentTemp} &deg;F</h1>
           <h4>Conditions: {conditions}</h4>
           <h4>Feels like {feelsLike}&deg;F</h4>
