@@ -8,24 +8,23 @@ const HomeView = () => {
       <div className="home-container">
         <div className="container py-5">
           <div className="home-message">
-            <img src="../search.png" alt="search" className="search-pic"></img>
             <p className="home-text">
               Search for your city to get weather info...
             </p>
           </div>
 
-          <div class="container text-center my-5">
-            <div class="row">
-              <div class="col">
+          <div className="container text-center my-5">
+            <div className="row">
+              <div className="col">
                 <div className="sun-image"></div>
               </div>
-              <div class="col">
+              <div className="col">
                 <div className="storm-image"></div>
               </div>
-              <div class="col">
+              <div className="col">
                 <div className="rain-drop-image"></div>
               </div>
-              <div class="col">
+              <div className="col">
                 <div className="wind-image"></div>
               </div>
             </div>

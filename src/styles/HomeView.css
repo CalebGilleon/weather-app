@@ -20,9 +20,10 @@
 }
 .home-text {
     display: inline-block;
-    font-size: 25px;
+    font-size: 35px;
     padding-left: 25px;
-    margin: 0px
+    margin: 0px;
+    text-shadow: 2px 2px 0px white;
 }
 .sun-image {
     display: inline-block;
