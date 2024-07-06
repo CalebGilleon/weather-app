@@ -16,6 +16,7 @@ function App() {
         <Navbar setSearchResults={setSearchResults} />
         <Routes>
           <Route path="/" element={<HomeView />} />
+          <Route path="/weather-app" element={<HomeView />} />
           <Route path="/about" element={<AboutView />} />
           <Route
             path="/search"
