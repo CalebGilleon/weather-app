@@ -1,0 +1,71 @@
+.home-container {
+    background-image: url(../../public/sun-background.webp);
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.home-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 5px solid white;
+    background-color: lightgray;
+    padding: 25px;
+    margin: 50px 100px 0px 100px;
+}
+.search-pic {
+    display: inline-block;
+    height: 75px;
+}
+.home-text {
+    display: inline-block;
+    font-size: 35px;
+    padding-left: 25px;
+    margin: 0px;
+    text-shadow: 2px 2px 0px white;
+}
+.sun-image {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: lightgray;
+    background-image: url(../../public/sun.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.storm-image {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: lightgray;
+    background-image: url(../../public/storm.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.rain-drop-image {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: lightgray;
+    background-image: url(../../public/rain-drop.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.wind-image {
+    display: inline-block;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: lightgray;
+    background-image: url(../../public/wind.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
